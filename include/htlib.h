@@ -7,6 +7,7 @@
 // Type of the hashmap key
 typedef enum {
   HT_KEY_TYPE_INT,
+  HT_KEY_TYPE_UINT,
   HT_KEY_TYPE_DOUBLE,
   HT_KEY_TYPE_STRING,
 } ht_key_type_t;
@@ -14,8 +15,10 @@ typedef enum {
 // Type of the hashmap value
 typedef enum {
   HT_VALUE_TYPE_INT,
+  HT_VALUE_TYPE_UINT,
   HT_VALUE_TYPE_DOUBLE,
   HT_VALUE_TYPE_STRING,
+  HT_VALUE_TYPE_PTR
 } ht_value_type_t;
 
 // Hashmap structure
