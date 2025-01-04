@@ -1,10 +1,24 @@
+/**
+ * @file htlib.h
+ * @brief A simple hashmap library in C.
+ */
+
 #ifndef _HTLIB_H_
 #define _HTLIB_H_
 
 #include <stdbool.h>
 #include <stddef.h>
 
-// Type of the hashmap key
+/**
+ * @brief Type of the hashmap key.
+ * 
+ * The key type determines how the keys are hashed and compared.
+ * 
+ * - `HT_KEY_TYPE_INT`: The key is an integer.
+ * - `HT_KEY_TYPE_UINT`: The key is an unsigned integer.
+ * - `HT_KEY_TYPE_DOUBLE`: The key is a double.
+ * - `HT_KEY_TYPE_STRING`: The key is a string.
+ */
 typedef enum {
   HT_KEY_TYPE_INT,
   HT_KEY_TYPE_UINT,
@@ -12,7 +26,21 @@ typedef enum {
   HT_KEY_TYPE_STRING,
 } ht_key_type_t;
 
-// Type of the hashmap value
+/**
+ * @brief Type of the hashmap value.
+ * 
+ * The value type determines how the values are stored and compared.
+ * 
+ * - `HT_VALUE_TYPE_INT`: The value is an integer.
+ * - `HT_VALUE_TYPE_UINT`: The value is an unsigned integer.
+ * - `HT_VALUE_TYPE_DOUBLE`: The value is a double.
+ * - `HT_VALUE_TYPE_STRING`: The value is a string.
+ * - `HT_VALUE_TYPE_PTR`: The value is a pointer.
+ * 
+ * Note: The `HT_VALUE_TYPE_PTR` type is useful for storing arbitrary data
+ * types, but it requires the user to manage the memory of the stored values.
+ * The library does not handle memory management for pointer values.
+ */
 typedef enum {
   HT_VALUE_TYPE_INT,
   HT_VALUE_TYPE_UINT,
@@ -21,7 +49,13 @@ typedef enum {
   HT_VALUE_TYPE_PTR
 } ht_value_type_t;
 
-// Hashmap structure
+
+/**
+ * @brief Opaque type for the hashmap.
+ * 
+ * The actual definition of the hashmap structure is hidden from the user.
+ * The user interacts with the hashmap using the provided functions.
+ */
 typedef struct ht_hashmap ht_hashmap_t;
 
 /**
