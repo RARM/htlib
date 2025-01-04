@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+
+# Executables
+*.exe
+
+# Object files
+*.o
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Temporary files
+*~
+*.swp
+
+# Doxygen output (if not tracked)
+docs/html/
+
+# Misc
+.DS_Store

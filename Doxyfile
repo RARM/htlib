@@ -1,0 +1,15 @@
+PROJECT_NAME           = htlib
+OUTPUT_DIRECTORY       = docs
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+CASE_SENSE_NAMES       = NO
+INPUT                  = src
+FILE_PATTERNS          = *.h *.c
+RECURSIVE              = YES
+EXCLUDE_SYMBOLS        =
+GENERATE_HTML          = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
