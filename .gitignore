@@ -16,8 +16,5 @@ build/
 *~
 *.swp
 
-# Doxygen output (if not tracked)
-docs/html/
-
 # Misc
 .DS_Store
