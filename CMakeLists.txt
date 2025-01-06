@@ -14,8 +14,8 @@ FetchContent_MakeAvailable(googletest)
 
 # Create htlib library
 add_library(htlib STATIC src/htlib.c)
-target_include_directories(htlib PUBLIC src)
+target_include_directories(htlib PUBLIC include)
 
 # Create test executable
-add_executable(htlib_test test/test.cpp)
+add_executable(htlib_test tests/htlib.test.cpp)
 target_link_libraries(htlib_test gtest_main gtest htlib)
