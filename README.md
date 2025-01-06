@@ -37,4 +37,6 @@ Contributions are welcome! Please feel free to submit pull requests.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is released to the public domain using the Unlicense. See the [UNLICENSE](UNLICENSE) file for details. 
+
+[Unlicense](https://unlicense.org/)
