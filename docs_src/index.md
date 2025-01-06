@@ -4,6 +4,10 @@
 htlib is a lightweight, cross-platform C library that provides a simple and efficient hashmap implementation. It supports various key and value types, including integers, unsigned integers, doubles, strings, and pointers, making it suitable for a wide range of applications.
 
 ## Features
+
+> [!caution]
+> The library is not ready. It is still missing features for automatic resizing and there is an issue with tables using integer keys and string values.
+
 *   **Support for various key and value types:**
     *   Signed/unsigned integers
     *   Doubles

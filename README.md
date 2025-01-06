@@ -4,6 +4,9 @@ A lightweight, cross-platform C library for hashmaps.
 
 ## Features
 
+> [!caution]
+> The library is not ready. It is still missing features for automatic resizing and there is an issue with tables using integer keys and string values.
+
 *   Supports various key and value types:
     *   Signed/unsigned integers
     *   Signed/unsigned floats/doubles
