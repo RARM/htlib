@@ -11,6 +11,9 @@
 // Define the initial capacity of the hashmap
 #define HT_INITIAL_CAPACITY 16
 
+static size_t ht_key_size(ht_key_type_t key_type);
+static size_t ht_value_size(ht_value_type_t value_type, const void *value);
+
 // Structure for a key-value pair
 typedef struct ht_entry {
   void *key;
